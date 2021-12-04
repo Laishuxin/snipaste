@@ -1,4 +1,4 @@
-import { resolve } from 'path'
+import { resolve } from "path";
 export default {
   // entry: resolve(__dirname, 'template'),
   // output: {
@@ -7,4 +7,4 @@ export default {
   // naming: {
   //   'snippet': 'sutils'
   // }
-}
+};

@@ -1,19 +1,19 @@
-import { Config } from '../types'
-import { resolve } from 'path'
-import { vscodeGenerator, vscodeResolver } from './resolver/vscode'
+import { Config } from "../types";
+import { resolve } from "path";
+import { vscodeGenerator, vscodeResolver } from "./resolver/vscode";
 
-export const resolver = vscodeResolver
-export const generator = vscodeGenerator
+export const resolver = vscodeResolver;
+export const generator = vscodeGenerator;
 
 export const config: Config = {
-  base: resolve(__dirname, '../'),
-  entry: 'template',
+  base: resolve(__dirname, "../"),
+  entry: "template",
   output: {
-    dir: '.vscode',
+    dir: ".vscode",
   },
 
   naming: {
-    template: 'sutils:',
+    template: "sutils:",
   },
-  ext: '.code-snippets',
-}
+  ext: ".code-snippets",
+};
