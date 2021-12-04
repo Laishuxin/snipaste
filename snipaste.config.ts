@@ -1,10 +1,9 @@
-import { resolve } from "path";
 export default {
-  // entry: resolve(__dirname, 'template'),
-  // output: {
-  //   dir: 'snippet-dist'
-  // },
-  // naming: {
-  //   'snippet': 'sutils'
-  // }
+  entry: "__demo__",
+  naming: {
+    snippet: "sutils",
+    template: "sutils:",
+    js: "js:",
+    vue: "vue2:",
+  },
 };

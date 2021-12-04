@@ -9,11 +9,13 @@ export const config: Config = {
   base: resolve(__dirname, "../"),
   entry: "template",
   output: {
-    dir: ".vscode",
+    dir: resolve(__dirname, "../.vscode"),
   },
 
   naming: {
     template: "sutils:",
+    js: "js:",
+    vue: "vue2:",
   },
   ext: ".code-snippets",
 };

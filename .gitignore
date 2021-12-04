@@ -3,3 +3,7 @@ node_modules
 dist
 dist-ssr
 *.local
+_*.sh
+template/*
+__demo__
+.vscode/*.code-snippets

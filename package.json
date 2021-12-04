@@ -1,11 +1,13 @@
 {
   "name": "snipaste",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/index.ts",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "generate": "ts-node ./src/index.ts",
+    "generate:watch": "nodemon ./src/index.ts"
   },
   "dependencies": {
     "@types/node": "^16.11.11",

@@ -11,4 +11,7 @@ export const resolveFileName = (fileName: string) => {
 export const extMap: { [key: string]: string } = {
   js: "javascript",
   vue: "vue",
+  ts: "typescript",
+  jsx: "javascriptreact",
+  tsx: "typescriptreact",
 };

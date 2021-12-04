@@ -10,7 +10,7 @@ function resolveConfig(config: Partial<Config>): Config {
   return res;
 }
 
-async function main() {
+async function run(config: Partial<Config>) {
   const _config = resolveConfig(config);
   const entry = resolve(_config.base, _config.entry);
   const target = resolve(_config.base, _config.output.dir);
@@ -27,7 +27,14 @@ async function main() {
   const { files, dirs, parent } = await snipaste.traverse();
   const fileWithContent = await snipaste.resolveFiles(files);
   snipaste.export(fileWithContent, { key: parent });
-  snipaste.resolveDirs(dirs);
+
+  dirs.forEach((dir) => {
+    run({ ..._config, base: resolve(_config.base, parent), entry: dir });
+  });
+}
+
+async function main() {
+  run(config);
 }
 
 main();
