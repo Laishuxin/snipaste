@@ -1,2 +1,8 @@
+build
+coverage
 dist
+node_modules
+public/*
 .vscode
+api-server
+.nuxt

@@ -1,13 +1,13 @@
 export interface Naming {
-  [key: string]: string;
+  [key: string]: string
 }
 
 export interface Config {
-  base: string;
-  entry: string;
+  base: string
+  entry: string
   output: {
-    dir: string;
-  };
-  naming: Naming;
-  ext: string;
+    dir: string
+  }
+  naming: Naming
+  ext: string
 }
