@@ -7,6 +7,7 @@ export const vscodeResolver = (
   prefix: string = '',
   suffix: string = '',
 ): string => {
+  content = content.replace(/\$/g, '\\$')
   const ext = path.extname(fileName)
   fileName = resolveFileName(fileName)
   let scope: string = ''
